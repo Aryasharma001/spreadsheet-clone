@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Google_Sheets_logo_%282014-2020%29.svg/1200px-Google_Sheets_logo_%282014-2020%29.svg.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4ae2e772d9.js" crossorigin="anonymous"></script>
+    <title>Spreadsheet</title>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <div class="logo">
+                <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <div class="navbar">
+                <div class="title">Untitled Spreadsheet
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-folder-closed"></i>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <div class="nav-panel">
+                    <ul>
+                        <li>File</li>
+                        <li>Edit</li>
+                        <li>View</li>
+                        <li>Insert</li>
+                        <li>Format</li>
+                        <li>Data</li>
+                        <li>Tools</li>
+                        <li>Extensions</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="msg">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <div class="gmeet">
+                <!-- <i class="fa-solid fa-video"></i> -->
+                <img src="google-meet.ico" alt="gmeet">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="btn">
+                <i class="fa-solid fa-lock"></i>
+                Share
+            </div>
+            <div class="avatar">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="formatting">
+            <div class="undo-sec">
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <i class="fa-solid fa-print"></i>
+                <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <div class="zoom">
+                100% <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="currency">
+                <i class="fa-solid fa-sterling-sign"></i>
+                <span> % </span>
+                <span> .0 </span>
+                <span> .00 </span>
+                <span> 123 </span>
+                <span>100% <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="fonts">
+                <span> Arial <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="fontsize">
+                <span> 10 <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+            <div class="fontstyle">
+                <i class="fa-solid fa-bold"></i>
+                <i class="fa-solid fa-italic"></i>
+                <i class="fa-solid fa-strikethrough"></i>
+                <span class="fontunderline"> A </span>
+            </div>
+            <div class="cellstyling">
+                <i class="fa-solid fa-fill-drip"></i>
+                <i class="fa-solid fa-border-all"></i>
+                <i class="fa-solid fa-border-none"></i>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="alignment">
+                <i class="fa-solid fa-align-left"></i>
+                <span>
+                    <i class="fa-solid fa-arrow-down-wide-short"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-text-height"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+            </div>
+            <div class="insert">
+                <i class="fa-solid fa-link"></i>
+                <i class="fa-regular fa-message"></i>
+                <i class="fa-solid fa-chart-column"></i>
+                <span>
+                    <i class="fa-solid fa-filter"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-florin-sign"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+            </div>
+            <span class="uparrow">
+                <i class="fa-solid fa-chevron-up"></i>
+            </span>
+        </div>
+    </section>
+
+    <section class="formulabar">
+        <div class="namebox">
+            A1<i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="formula">
+            <i class="fa-solid fa-franc-sign"></i>
+        </div>
+    </section>
+    <main>
+        <div id="sheet"></div>
+    </main>
+    <footer>
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-align-justify"></i>
+        <div class="sheetNo">
+            <span>
+                Sheet1
+                <i class="fa-solid fa-caret-down"></i>
+            </span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.268);;
+}
+
+
+::-webkit-scrollbar-track-piece:start{
+    margin-left : 3rem;
+}
+
+::-webkit-scrollbar-track-piece{
+    margin-top : 1.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.268); 
+    border-radius: 10px;
+  }
+
+/* ::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+} */
+
+header{
+    padding : .5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : 1rem;
+}
+
+.branding{
+    display: flex;
+    gap : 1rem;
+}
+
+.nav-panel li{
+    list-style: none;
+    display: inline-block;
+    padding : .3rem .5rem;
+    font-weight: 100;
+}
+
+.logo{
+    color : green;
+    font-size: 2.5rem;
+}
+
+.navbar .title{
+    font-size: 1.2rem;
+    margin-bottom: .1rem;
+    color : grey;
+    padding: 0 .5rem;
+}
+
+.navbar .title i{
+    font-size: .9rem;
+    margin-left : .5rem;
+    color :rgb(85, 80, 80);
+    position: relative;
+    bottom :2px;
+}
+
+.navbar .nav-panel{
+    font-size: .9rem;
+}
+
+.nav-panel li:hover{
+    background-color: rgba(204, 204, 204, 0.36);
+    border-radius: 5px;
+    cursor : pointer;
+}
+
+.icons{
+    display: flex;
+    gap : 1rem;
+    cursor: pointer;
+    align-items : center;
+    justify-content: center;
+    color : rgb(91, 86, 86);
+}
+
+.icons .msg{
+    font-size: 1.5rem;
+    padding : .4rem .5rem;
+    border-radius: 1rem;
+}
+
+.icons .gmeet{
+    border : 1px solid rgba(128, 128, 128, 0.432);
+    border-radius: 1.2rem;
+    padding : .2rem .5rem;
+    display: flex;
+    align-items: center;
+    gap : .3rem;
+}
+.icons .gmeet img{
+    width: 1.8rem;
+}
+.icons .gmeet .fa-caret-down{
+    font-size: .7rem;
+}
+.icons .btn i{
+    font-size: .8rem;
+}
+.icons .btn{
+    background-color: green;
+    width : 5rem;
+    height : 2.2rem;
+    border-radius: 5px;
+    color : white;
+    border : none;
+    font-size: .9rem;
+    display: flex;
+    gap : 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons :not(:nth-child(3)):hover{
+    background-color: rgba(204, 204, 204, 0.36);
+    cursor : pointer;
+}
+
+.icons .avatar{
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height : 2.5rem;
+    border : 1px solid rgba(128, 128, 128, 0.432);
+    border-radius: 50%;
+    text-align: center;
+    padding: .5rem;
+}
+
+.rule{
+    font-size: 1px;
+    border-bottom: 0;
+    color : rgba(204, 204, 204, 0.36);
+}
+
+.formatting{
+    padding : 0.5rem 1.8rem;
+    border-top : 1px solid rgb(154, 152, 152);
+    border-bottom : 1px solid rgb(154, 152, 152);
+    color: rgb(91, 86, 86);
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.undo-sec, .currency, .cellstyling, .alignment, .fontstyle {
+    display: flex;
+    gap : .5rem;
+    border-right: 1px solid rgb(154, 152, 152);
+    padding : .0rem .5rem;
+    align-items: center;
+}
+
+
+.zoom, .fonts, .fontsize {
+    padding : .0rem .3rem;
+    border-right: 1px solid rgb(154, 152, 152);
+}
+
+.currency{
+    font-weight: 600;
+}
+.fontsize i{
+    margin-left: 2rem;
+}
+
+.fontstyle {
+    font-weight: 600;
+}
+
+.fontstyle .fontunderline{
+    border-bottom: 4px solid black;
+    border-radius: 3px 3px 0 0;
+    padding-inline : 0.3rem;
+    align-self: start;
+}
+
+.insert{
+    display: flex;
+    align-items: center;
+    gap : .5rem;
+    padding : 0rem .3rem;
+}
+
+.uparrow i{
+    position: relative;
+    left : 24rem;
+}
+
+.formatting>div :hover{
+    background-color: rgba(204, 204, 204, 0.36);
+    cursor : pointer;
+}
+
+.formatting i, .formatting div>span{
+    padding : .18rem .15rem;
+    border-radius: 3px;
+}
+
+
+.formulabar{
+    display: flex;
+    padding : .2rem;
+    border-bottom: 1px solid rgb(154, 152, 152);;
+    font-size: .8rem;
+    align-items: center;
+    gap : .2rem;
+}
+
+.formulabar .namebox i{
+    margin-left: 3.5rem;
+}
+
+.formulabar .namebox{
+    padding : .1rem .3rem;
+    border-right: 1px solid rgb(154, 152, 152);
+}
+
+.formulabar .formula{
+    padding : 0rem 1rem;
+    border-right: 1px solid rgb(154, 152, 152);
+    font-size: 1rem;
+    color : grey;
+}
+
+.formulabar .namebox:hover{
+    background-color: rgba(204, 204, 204, 0.36);
+}
+
+
+#sheet{
+    overflow: scroll;
+    display: flex;
+    height : 77.5vh;
+}
+
+.cell-block{
+    margin: 0;
+    padding : .2rem;
+    width : 6rem;
+    height : 1.5rem;
+    border-radius: 0;
+    outline : none;
+    border : 1px solid rgba(204, 204, 204, 0.86);
+}
+
+.cell-block + .cell-block{
+    border-left: 0;
+    border-top: 0;
+}
+
+.cell-block:focus{
+    border : 2px solid rgb(13, 122, 231);
+}
+
+.row-container{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding : 0 3rem;
+    color : rgb(91, 86, 86);
+    display: flex;
+    gap : 1.5rem;
+    background-color: rgba(204, 204, 204, 0.2);
+    align-items: center;
+}
+
+footer .sheetNo{
+    color : green;
+    background-color: white;
+    height : 2.2rem;
+    padding : .5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border : none;
+    cursor : default;
+}
+
+footer .sheetNo span> i{
+    padding : .2rem;
+    border-radius: 3px;
+}
+
+footer .sheetNo span> i:hover{
+    background-color: rgba(0, 128, 0, 0.229);
+    cursor: pointer;
+}
+footer > i:hover{
+    color : black;
+    cursor: pointer;
+}
